@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mphasis_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySa-MW-XM7">
+                                <rect key="frame" x="0.0" y="59" width="393" height="337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVr-mv-RN9">
+                                        <rect key="frame" x="196.66666666666666" y="168.66666666666666" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EVr-mv-RN9" firstAttribute="centerY" secondItem="ySa-MW-XM7" secondAttribute="centerY" id="ERp-VE-s1S"/>
+                                    <constraint firstItem="EVr-mv-RN9" firstAttribute="centerX" secondItem="ySa-MW-XM7" secondAttribute="centerX" id="g03-mK-vYV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-TL-fGo">
+                                <rect key="frame" x="0.0" y="396" width="393" height="336"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlt-K5-YDY">
+                                        <rect key="frame" x="196.66666666666666" y="168" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xlt-K5-YDY" firstAttribute="centerX" secondItem="Ter-TL-fGo" secondAttribute="centerX" id="24o-aC-wT7"/>
+                                    <constraint firstItem="Xlt-K5-YDY" firstAttribute="centerY" secondItem="Ter-TL-fGo" secondAttribute="centerY" id="aVf-Hj-hzc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2j-kO-fDe">
+                                <rect key="frame" x="8" y="764" width="377" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1s-Db-TLB">
+                                        <rect key="frame" x="12" y="12" width="64" height="30"/>
+                                        <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="u9d-6i-OFD"/>
+                                        </constraints>
+                                        <state key="normal" title="Weather">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="checkWeatherWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zH-2K-EFe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nS-Zs-hEj">
+                                        <rect key="frame" x="88" y="12" width="64" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="Q3x-O5-Iyj"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hD3-7V-lf8">
+                                        <rect key="frame" x="305" y="12" width="64" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="About Us">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="aboutusWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z6g-xZ-RLo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="e1s-Db-TLB" firstAttribute="top" secondItem="f2j-kO-fDe" secondAttribute="top" constant="12" id="Gkk-8A-G7x"/>
+                                    <constraint firstItem="e1s-Db-TLB" firstAttribute="top" secondItem="9nS-Zs-hEj" secondAttribute="top" id="LGw-m0-3WK"/>
+                                    <constraint firstItem="e1s-Db-TLB" firstAttribute="baseline" secondItem="hD3-7V-lf8" secondAttribute="baseline" id="W7i-9b-kTU"/>
+                                    <constraint firstItem="hD3-7V-lf8" firstAttribute="trailing" secondItem="f2j-kO-fDe" secondAttribute="trailingMargin" id="ged-EY-5Tk"/>
+                                    <constraint firstItem="e1s-Db-TLB" firstAttribute="centerY" secondItem="f2j-kO-fDe" secondAttribute="centerY" id="gyK-Us-fdl"/>
+                                    <constraint firstItem="e1s-Db-TLB" firstAttribute="leading" secondItem="f2j-kO-fDe" secondAttribute="leading" constant="12" id="pbR-TI-XgB"/>
+                                    <constraint firstItem="9nS-Zs-hEj" firstAttribute="leading" secondItem="e1s-Db-TLB" secondAttribute="trailing" constant="12" id="xC7-1S-skQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f2j-kO-fDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="10F-5I-aOD"/>
+                            <constraint firstItem="ySa-MW-XM7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6jB-bj-MIy"/>
+                            <constraint firstItem="ySa-MW-XM7" firstAttribute="centerX" secondItem="f2j-kO-fDe" secondAttribute="centerX" id="DZc-hL-vZH"/>
+                            <constraint firstItem="ySa-MW-XM7" firstAttribute="trailing" secondItem="Ter-TL-fGo" secondAttribute="trailing" id="Jox-V3-AYI"/>
+                            <constraint firstAttribute="bottom" secondItem="ySa-MW-XM7" secondAttribute="bottom" constant="456" id="ZnQ-8P-zC5"/>
+                            <constraint firstItem="ySa-MW-XM7" firstAttribute="leading" secondItem="Ter-TL-fGo" secondAttribute="leading" id="jex-sc-U8b"/>
+                            <constraint firstItem="f2j-kO-fDe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kFq-DN-ShI"/>
+                            <constraint firstItem="Ter-TL-fGo" firstAttribute="top" secondItem="ySa-MW-XM7" secondAttribute="bottom" id="lfZ-OI-Eru"/>
+                            <constraint firstItem="f2j-kO-fDe" firstAttribute="top" secondItem="Ter-TL-fGo" secondAttribute="bottom" constant="32" id="nW7-3s-bK7"/>
+                            <constraint firstItem="ySa-MW-XM7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFi-Z6-Sgh"/>
+                            <constraint firstItem="ySa-MW-XM7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yGg-Yf-WLZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
